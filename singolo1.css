@@ -261,3 +261,13 @@ body {
     background-color: #ffffff;
     height: 7px;
 }
+
+
+.menu-item:hover {
+    color: #f06c64;
+    cursor: pointer;
+}
+
+.slider-arrow:hover{
+    cursor: pointer;
+}
