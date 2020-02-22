@@ -6,8 +6,6 @@
 body {
   width: 1020px;
   height: 1195px;
-
-  font-family: 'Lato', Verdana, sans-serif;
 }
 
 .wrapper {
@@ -20,10 +18,10 @@ body {
 }
 
 .header__content {
+  font-family: 'Lato-Bold';
   display: flex;
   height: 89px;
   
-  font-weight: 700;
   text-transform: uppercase;
   justify-content: space-between;
 }
@@ -44,8 +42,8 @@ body {
 
 .navigation {
   display: flex;
-  width: 372px;
-  margin: 42px 39px 0px 0px;
+  width: 371px;
+  margin: 42px 40px 0px 0px;
   
   justify-content: space-between;
 }
@@ -61,7 +59,7 @@ body {
 }
 
 .item-symbol {
-  line-height: 12px;
+  line-height: 9px;
   color: #494e62;
 }
 
@@ -191,8 +189,8 @@ body {
   display: inline-block;
   margin: 59px 0px 0px 39px;
   
+  font-family: 'Lato-Black';
   font-size: 30px;
-  font-weight: 900;
   color: #666d89;
 }
 
@@ -200,8 +198,8 @@ body {
   width: 940px;
   margin: 18px 0px 0px 40px;
 
+  font-family: 'Lato-Light';
   font-size: 18px;
-  font-weight: 300;
   line-height: 30px;
   color: #767e9e;
 
@@ -246,8 +244,8 @@ body {
 .layout-item__header {
   margin: -5px 0px 0px -2px;
 
+  font-family: 'Lato-Black';
   font-size: 18px;
-  font-weight: 900;
   color: #666d89;
 }
 
@@ -262,9 +260,9 @@ body {
 .layout-item__text {
   margin: 8px 0px 0px -1px;
 
+  font-family: 'Lato-Regular';
   font-size: 12px;
   line-height:  1.8;
-  font-weight: 400;
   color: #767e9e;
   text-align: justify;
 }
