@@ -85,10 +85,12 @@ body {
 
 .link-backward { 
   margin: 281px 0px 0px 42px;
+  text-decoration: none;
 }
 
 .link-forward {
   margin: 281px 40px 0px 0px;
+  text-decoration: none;
 }
 
 .shadow-vertical {
@@ -252,6 +254,7 @@ body {
 .layout-item__text-container {
   width: 219px;
   height: 70px;
+  padding-left: 1px;
 
   overflow: hidden;
 }
