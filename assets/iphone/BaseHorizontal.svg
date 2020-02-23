@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461 218" width="461" height="218">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #f2f2f2 } 
+	</style>
+	<g id="Slider">
+		<g id="iPhone Horizontal">
+			<path id="Base" class="shp0" d="M459 28L459 189C459 203.91 446.91 216 432 216L28 216C13.09 216 1 203.91 1 189L1 28C1 13.09 13.09 1 28 1L432 1C446.91 1 459 13.09 459 28Z" />
+		</g>
+	</g>
+</svg>
