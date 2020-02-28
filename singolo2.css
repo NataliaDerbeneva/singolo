@@ -94,8 +94,10 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   margin: 19px 0px 0px 0px;
-  
+  height: 621px;
+
   justify-content: space-between;
+  overflow: hidden;
   }
 
 .layout-4-column__image {
