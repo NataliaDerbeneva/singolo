@@ -201,3 +201,13 @@ body {
 .layout-item__text_spacing{
   letter-spacing: -0.003rem;
 }
+
+.portfolio__item-link:hover{
+  cursor: pointer;
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
+
+.item-link:hover {
+  cursor: pointer;
+}
