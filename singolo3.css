@@ -1,0 +1,42 @@
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  
+  body {
+    width: 1020px;
+    height: 1195px;
+    margin: 0px auto 0px auto;
+  }
+
+  .get-a-quote {  
+    background-color: #f06c64;
+    color: #f0d8d9;
+  }
+
+  .wrapper {
+    max-width: 1020px;
+    padding: 0px 40px 0px 40px;
+  }
+
+  .get-a-quote__wrapper{
+      padding-top: 59px;
+      height: 657px;
+  }
+
+  .get-a-quote__header {
+    font-family: 'Lato-Black', Verdana, sans-serif;
+    font-size: 30px;
+    letter-spacing: -0.006em;
+  }
+
+  .get-a-quote__text{
+    width: 940px;
+    margin: 18px 0px 0px 0px;
+    
+    font-family: 'Lato-Light', Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    
+    text-align: left;  
+  }
