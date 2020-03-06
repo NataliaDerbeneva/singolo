@@ -149,3 +149,39 @@ letter-spacing: -0.006em;
   height: 6px;
   background-color:#ea676b;
 }
+
+footer{
+  background-color: #2d303a;
+}
+
+.footer__wrapper{
+  height: 55px;
+  padding-top: 21px;
+}
+
+.footer__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__copyright{
+  margin-top: 9px;
+  margin-left: 2px;
+  color: #666d89;
+  font-family: "Lato-Regular", Verdana, sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.016em;
+}
+
+.social-media-links{
+  width: 154px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: -1px;
+}
+
+.link:hover{
+  cursor: pointer;
+}
+
