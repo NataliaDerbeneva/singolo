@@ -52,14 +52,21 @@
     margin-top: 7px;
   }
 
+  form{
+  height: 434px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .get-a-quote__form input{
-      height: 36px;
+      height: 38px;
   }
 
   .get-a-quote__form input, .get-a-quote__form textarea{
     background-color: #d6564f;
-    border: none;
     color: #f0d8d9; 
+    border:none;
     border-radius: 5px;
     padding: 0px 0px 0px 14px;
     margin-bottom: 16px; 
@@ -69,13 +76,10 @@
 }
 
 .get-a-quote__form textarea{
-    height: 202px;
+    height: 203px;
     line-height: 35px;
 }
 
-.get-a-quote__form input{
-    height: 38px;
-}
 .get-a-quote__form input::-webkit-input-placeholder{
     color: #f48c8f;
   }
@@ -90,6 +94,27 @@
 
   .get-a-quote__form textarea::-moz-placeholder{
     color: #f48c8f;
+  }
+
+  .get-a-quote__form  .submit-button{
+    width: 100px;
+    padding: 0px 10px 0px 10px;
+    align-self: flex-end;
+    border: 1px solid #f48c8f;
+  }
+
+  .submit-button:hover{
+    cursor: pointer;
+  }
+
+  input:focus{
+    outline: #f0d8d9 solid 1px; 
+    outline-offset: 1px;
+  }
+
+  textarea:focus{
+    outline: #f0d8d9 solid 1px; 
+    outline-offset: 1px;
   }
 
   .get-a-quote__contact-information{
