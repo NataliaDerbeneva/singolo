@@ -5,7 +5,7 @@
   
   body {
     width: 1020px;
-    height: 1195px;
+    height: 730px;
     margin: 0px auto 0px auto;
   }
 
@@ -66,8 +66,8 @@
   .get-a-quote__form input, .get-a-quote__form textarea{
     background-color: #d6564f;
     color: #f0d8d9; 
-    border:none;
     border-radius: 5px;
+    border:none;
     padding: 0px 0px 0px 14px;
     margin-bottom: 16px; 
     width: 605px;
@@ -109,6 +109,11 @@
 
   input:focus{
     outline: #f0d8d9 solid 1px; 
+    outline-offset: 1px;
+  }
+
+  input:invalid{
+    outline: red solid 3px; 
     outline-offset: 1px;
   }
 

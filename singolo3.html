@@ -15,8 +15,8 @@
           <div class="layout-2-column">
             <div class = "get-a-quote__form">
               <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Name (Required)" required>
-                <input type="email" name="email" placeholder="Email (Required)" required>
+                <input type="text" name="name" placeholder="Name (Required)" required pattern="^[A-Z]{1}[a-z]+(\s[A-Z]{1}([a-z]+))?$">
+                <input type="email" name="email" placeholder="Email (Required)" required pattern="^[^@]+@([a-z0-9\-]+\.)+[a-z]{2,4}$">
                 <input type="text" name="subject" placeholder="Subject">
                 <textarea name="description" cols="30" rows="21" placeholder="Describe your project in detail..."></textarea>
                 <input class="submit-button" type="submit" value="Submit">
