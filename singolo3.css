@@ -21,7 +21,7 @@
 
   .get-a-quote__wrapper{
       padding-top: 59px;
-      height: 657px;
+      height: 589px;
   }
 
   .get-a-quote__header {
@@ -145,3 +145,7 @@ letter-spacing: -0.006em;
   margin-top: 1px;
 }
 
+.get-a-quote__bottom{
+  height: 6px;
+  background-color:#ea676b;
+}
