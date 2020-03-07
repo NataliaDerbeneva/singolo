@@ -310,7 +310,7 @@ cursor: pointer;
 }
 
 .portfolio__wrapper {
-  height: 757px;
+  height: 804px;
   padding-top: 59px;
 }
   
@@ -379,14 +379,11 @@ cursor: pointer;
   overflow: hidden;
 }
 
-.portfolio__bottom {
-    height: 6px;
-    margin: 47px 0px 0px 0px;
-  
-    background-color: #323746;
-  }
+.portfolio__bottom-line {
+  background-color: #323746;
+}
     
-  .about-us {
+.about-us {
     background-color: #f2f2f2;
   }
   
