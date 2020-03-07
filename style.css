@@ -296,10 +296,8 @@ body {
   margin: 8px 0px 0px 0px;
 }
 
-.services__bottom {
-height: 6px;
-margin: 27px 0px 0px 0px;
-background-color: #ffffff;
+.services__bottom-line {
+  background-color: #ffffff;
 }
 
 .item-link:hover {
@@ -307,10 +305,4 @@ color: #f06c64;
 cursor: pointer;
 }
 
-.link-backward:hover {
-cursor: pointer;
-}
 
-.link-forward:hover {
-cursor: pointer;
-}
