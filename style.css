@@ -394,7 +394,7 @@ cursor: pointer;
 }
 
 .about-us__wrapper {
-  height: 728px;
+  height: 669px;
   padding-top: 59px;
 }
   
@@ -472,10 +472,7 @@ cursor: pointer;
   letter-spacing: -0.0035em;
 }
   
-.about-us__bottom {
-height: 6px;
-margin: 59px 0px 0px 0px;
-
-background-color: #ffffff;   
+.about-us__bottom-line {
+  background-color: #ffffff;   
 }
   
