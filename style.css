@@ -579,7 +579,7 @@ textarea:focus {
   outline-offset: 1px;
 }
   
-input:invalid {
+input:focus:invalid {
   outline: red solid 3px; 
   outline-offset: 1px;
 }
