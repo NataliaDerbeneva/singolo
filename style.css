@@ -220,6 +220,10 @@ body {
   overflow: hidden;
 }
 
+.services__layout-container{
+  padding-left: 1px;
+}
+
 .layout-3-column {
   display: flex;
   flex-wrap: wrap;
@@ -239,6 +243,10 @@ body {
 .layout-item__icon-container {
   height: 87px;
   margin: -1px 19px 0px 1px;
+}
+
+.layout-item__first-column-icon-container_margin {
+  margin-left: 0px;
 }
 
 .layout-item__icon-container_margin {
@@ -285,6 +293,10 @@ body {
 
 .layout-item__icon_margin {
   margin: 1px 0px 0px 1px;
+}
+
+.first-icon_margin{
+  margin: 1px 0px 0px 3px;
 }
 
 .icon_add-margin {
@@ -433,7 +445,7 @@ cursor: pointer;
 }
   
 .layout-item__person-name {
-  margin: 10.5px 0px 0px -1px;
+  margin: 11px 0px 0px -1px;
 
   font-size: 18px;
   font-family: "Lato-Black", Verdana, sans-serif;
@@ -595,7 +607,9 @@ input:focus:invalid {
 }
   
 .contact-information__text {
+  display: block;
   width: 300px;
+  height: 88px;
   margin-top: 7px;
 
   font-size: 12px;
