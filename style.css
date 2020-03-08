@@ -439,6 +439,9 @@ cursor: pointer;
   font-family: "Lato-Black", Verdana, sans-serif;
   color: #666d89;
   letter-spacing: -0.008em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
   
 .layout-item__person-text {
