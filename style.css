@@ -207,14 +207,17 @@ body {
 }
 
 .services__text {
+  display: block;
   width: 940px;
+  height: 60px;
   margin: 18px 0px 48px 0px;
 
   font-size: 18px;
   line-height: 30px;
-  font-family: 'Lato-Light', Verdana, sans-serif;
+  font-family: "Lato-Light", Verdana, sans-serif;
   color: #767e9e;
   text-align: justify;
+  overflow: hidden;
 }
 
 .layout-3-column {
@@ -379,10 +382,13 @@ cursor: pointer;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-content: space-between;
 
   height: 601px;
   overflow: hidden;
+}
+
+.layout-4-column__image {
+  margin-bottom: 20px;
 }
 
 .portfolio__bottom-line {
