@@ -222,6 +222,7 @@ body {
 
 .services__layout-container{
   padding-left: 1px;
+  width: 937px
 }
 
 .layout-3-column {
@@ -233,20 +234,20 @@ body {
 
 .layout__layout-item {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 302px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
   height: 87px;
   margin-bottom: 36px;
 }
 
 .layout-item__icon-container {
   height: 87px;
-  margin: -1px 19px 0px 1px;
+  margin: -1px 19px 0px 0px;
 }
 
-.layout-item__first-column-icon-container_margin {
-  margin-left: 0px;
+.layout-item__second-column-icon-container_margin {
+  margin: -1px 0px 0px 0px;
 }
 
 .layout-item__icon-container_margin {
@@ -296,19 +297,23 @@ body {
 }
 
 .first-icon_margin{
-  margin: 1px 0px 0px 3px;
+  margin: 1px 0px 0px 2px;
 }
 
 .icon_add-margin {
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 1px;
 }
 
 .layout-item__header_margin {
-  margin: -5px 0px 0px 2px;
+  margin: -5px 0px 0px 3px;
 }
 
 .layout-item__text_margin {
   margin: 8px 0px 0px 0px;
+}
+
+.icon-bubble_margin {
+  margin: 2px 0px 0px 2px;
 }
 
 .services__bottom-line {
