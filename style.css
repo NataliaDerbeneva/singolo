@@ -84,12 +84,17 @@ body {
 
 .slider__wrapper {
   height: 594px;
+  display: flex;
+  width: 940px;
+  overflow: hidden;
 }
 
 .slider__content {
   position: relative;  
   display: flex;
   justify-content: space-between;
+  width: 940px;
+  flex-shrink: 0;
 }
 
 .link-backward { 
@@ -183,6 +188,81 @@ body {
   position: absolute;
   top: 275px;
   left: 816px;
+  z-index: 6;
+}
+
+.slider__content-2 {
+  position: relative;  
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  flex-shrink: 0;
+}
+
+.slide2_opacity {
+  opacity: 0.5;
+}
+
+.slide2__phone-vertical-shadow-1 {
+  position: absolute;
+  top: 152px;
+  left: 572.16px;
+  z-index: 1;
+}
+
+.slide2__phone-vertical-1 { 
+  position: absolute;
+  top: 152px;
+  left: 572.16px;
+  z-index: 2;
+}
+
+.slide2__phone-vertical-display-1 {
+  position: absolute;
+  top: 194.26px;
+  left: 581.26px;
+  z-index: 3;
+}
+
+.slide2__phone-vertical-shadow-2 {
+  position: absolute;
+  top: 152px;
+  left: 212px;
+  z-index: 1;
+}
+
+.slide2__phone-vertical-2 { 
+  position: absolute;
+  top: 152px;
+  left: 212px;
+  z-index: 2;
+}
+
+.slide2__phone-vertical-display-2 {
+  position: absolute;
+  top: 194.26px;
+  left: 221.1px;
+  z-index: 3;
+}
+
+.slide2__phone-vertical-shadow-3 {
+  position: absolute;
+  top: 42px;
+  left: 344px;
+  z-index: 4;
+}
+
+.slide2__phone-vertical-3 { 
+  position: absolute;
+  top: 42px;
+  left: 344px;
+  z-index: 5;
+}
+
+.slide2__phone-vertical-display-3 {
+  position: absolute;
+  top: 111.04px;
+  left: 358.87px;
   z-index: 6;
 }
 

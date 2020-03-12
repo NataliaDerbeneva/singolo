@@ -15,5 +15,4 @@ function select(event){
        
        event.target.classList.add('header__navigation_selected');
    }
-    
 }
