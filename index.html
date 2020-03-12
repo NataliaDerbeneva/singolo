@@ -7,24 +7,23 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="wrapper header__wrapper">
         <div class="header__content">
           <div class="header__logo">
-            <p class="logo" lang="la">singolo</p>
-            <p class="logo logo_colored">*</p>
+             <p class="logo" lang="la">singolo<span class="logo logo_colored">*</span></p>
           </div>    
           <nav class="header__navigation">
             <ul class="navigation__list">
-              <li class="navigation__item"><a class="item-link" href="#">home</a></li>
+              <li class="navigation__item"><a class="item-link" href="#home">home</a></li>
               <li class="navigation__item item-symbol">.</li>
-              <li class="navigation__item"><a class="item-link" href="#">services</a></li>
+              <li class="navigation__item"><a class="item-link" href="#services">services</a></li>
               <li class="navigation__item item-symbol">.</li>
-              <li class="navigation__item"><a class="item-link" href="#">portfolio</a></li>
+              <li class="navigation__item"><a class="item-link" href="#portfolio">portfolio</a></li>
               <li class="navigation__item item-symbol">.</li>
-              <li class="navigation__item"><a class="item-link" href="#">about</a></li>
+              <li class="navigation__item"><a class="item-link" href="#about">about</a></li>
               <li class="navigation__item item-symbol">.</li>
-              <li class="navigation__item"><a class="item-link" href="#">contact</a></li>
+              <li class="navigation__item"><a class="item-link" href="#contact">contact</a></li>
             </ul>
           </nav>    
         </div>
@@ -48,11 +47,12 @@
           <img class="speaker-horizontal" src="assets/iphone/SpeakerHorizontal.svg" alt="speaker" width="8" height="39">
           <img class="cam-horizontal" src="assets/iphone/Cam.svg" alt="cam" width="12" height="12">
           <img class="home-button-horizontal" src="assets/iphone/HomeButton.svg" alt="home-button" width="45" height="45">
-        </div>                          
+        </div>  
+                                
       </div>
       <hr class="bottom-line slider__bottom-line">      
     </section> 
-    <section class="services">
+    <section class="services" id="services">
       <div class="wrapper services__wrapper">
         <h1 class="services__header">Our Services</h1>
         <p class="services__text" lang="la">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -141,7 +141,7 @@
       </div>
       <hr class="bottom-line services__bottom-line">
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="wrapper portfolio__wrapper">
         <h2 class="portfolio__header">Portfolio</h2>
         <p class="portfolio__text" lang="la">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -170,7 +170,7 @@
       </div>
       <hr class="bottom-line portfolio__bottom-line">
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about">
       <div class="wrapper about-us__wrapper">
         <h2 class="about-us__header">About Us</h2>
         <p class="about-us__text" lang="la">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -214,7 +214,7 @@
       </div>  
       <hr class="bottom-line about-us__bottom-line">       
     </section> 
-    <section class="get-a-quote">
+    <section class="get-a-quote" id="contact"> 
       <div class="wrapper get-a-quote__wrapper">
         <h2 class="get-a-quote__header">Get a Quote</h2>
         <p class="get-a-quote__text" lang="la">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -268,6 +268,7 @@
           </ul>
         </div>
       </div>  
-    </footer>             
+    </footer>   
+    <script src="script.js"></script>   
   </body>
 </html>

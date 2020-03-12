@@ -689,3 +689,7 @@ footer {
 .social-media-links_margin {
   margin: 0px -1px 0px 0px;   
 }
+
+.header__navigation_selected{
+  color: #f06c64;
+}
