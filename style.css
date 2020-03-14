@@ -72,6 +72,10 @@ body {
   color: #494e62;
 }
 
+.header__navigation_selected{
+  color: #f06c64;
+}
+
 .bottom-line {
   height: 6px;
   border: none;
@@ -502,6 +506,11 @@ cursor: pointer;
   color: #dedede;
   border: 1px solid #c5c5c5;
 }
+
+.portfolio__navigation_selected{
+  color: #dedede;
+  border: 1px solid #c5c5c5;
+}
   
 .layout-4-column {
   display: flex;
@@ -809,8 +818,4 @@ footer {
 
 .social-media-links_margin {
   margin: 0px -1px 0px 0px;   
-}
-
-.header__navigation_selected{
-  color: #f06c64;
 }

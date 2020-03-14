@@ -61,3 +61,30 @@ function changeScreen(event){
   }
 
 }
+
+const portfolioLinks = document.querySelectorAll('.portfolio__item-link');
+portfolioLinks.forEach(link => link.addEventListener('click',replaceImage))
+let portfolioSelectedLink = -1;
+let portfolioImageList = document.querySelector('.portfolio .layout-4-column');
+
+function replaceImage(event){
+  event.preventDefault();
+
+  if(portfolioSelectedLink!=-1){
+    portfolioLinks[portfolioSelectedLink].classList.remove('portfolio__navigation_selected');
+  }
+
+  for(let i=0; i<portfolioLinks.length;i++){
+    if(event.target === portfolioLinks[i]){
+      portfolioSelectedLink = i; 
+      break;
+    }
+  }
+
+  portfolioLinks[portfolioSelectedLink].classList.add('portfolio__navigation_selected');
+
+  let shiftedImage = portfolioImageList.children[0];
+  portfolioImageList.removeChild(shiftedImage);
+  portfolioImageList.appendChild(shiftedImage);
+  console.log(portfolioImageList); 
+}
