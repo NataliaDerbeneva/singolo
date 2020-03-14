@@ -9,6 +9,9 @@ body {
 }
 
 .header {
+  position: fixed;
+  z-index: 100;
+  width: inherit;
   background-color: #2d303a;
 }
 
@@ -79,10 +82,17 @@ body {
 }
 
 .slider {
+  position: relative;
   background-color: #f06c64;
 }
 
+#home {
+  position: absolute;
+  top: 0px;
+}
+
 .slider__wrapper {
+  padding-top: 95px;
   height: 594px;
   display: flex;
   width: 940px;
@@ -269,10 +279,16 @@ body {
 }
 
 .services__header {
+  position: relative;
   font-size: 30px;
   font-family: "Lato-Black", Verdana, sans-serif;
   color: #666d89; 
   letter-spacing: -0.01rem;
+}
+
+#services {
+  position: absolute;
+  top: -154px;
 }
 
 .services__text {
@@ -404,10 +420,16 @@ cursor: pointer;
 }
   
 .portfolio__header {
+  position: relative;
   font-size: 30px;
   font-family: "Lato-Black", Verdana, sans-serif;
   color: #666d89;
   letter-spacing: -0.007em;
+}
+
+#portfolio {
+  position: absolute;
+  top: -154px;
 }
   
 .portfolio__text {
@@ -490,11 +512,17 @@ cursor: pointer;
   padding-top: 59px;
 }
   
-.about-us__header {   
+.about-us__header {
+  position: relative;   
   font-size: 30px;
   font-family: "Lato-Black", Verdana, sans-serif;
   color: #666d89;
   letter-spacing: -0.007em;
+}
+
+#about {
+  position: absolute;
+  top: -154px;
 }
   
 .about-us__text {
@@ -582,9 +610,15 @@ cursor: pointer;
 }
   
 .get-a-quote__header {
+  position: relative;
   font-size: 30px; 
   font-family: "Lato-Black", Verdana, sans-serif;
   letter-spacing: -0.006em;
+}
+
+#contact {
+  position: absolute;
+  top: -154px;
 }
   
 .get-a-quote__text {

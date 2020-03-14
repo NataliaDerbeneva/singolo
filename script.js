@@ -37,3 +37,4 @@ function slideList (event){
     document.querySelector('.slider__bottom-line').classList.remove('slider__bottom-line_visibility');
   }
 }
+
