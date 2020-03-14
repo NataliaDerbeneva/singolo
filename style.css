@@ -186,6 +186,20 @@ body {
   z-index: 3;
 }
 
+.slide1__home-vertical {
+  position: absolute;
+  top: 461px;
+  left: 141px;
+  z-index: 3;
+}
+
+.slide1__home-horizontal {
+  position: absolute;
+  top: 261px;
+  left: 375px;
+  z-index: 3;
+}
+
 .slide2_opacity {
   opacity: 0.5;
 }
@@ -266,6 +280,10 @@ body {
 }
 
 .slider__bottom-line_visibility {
+  display: none;
+}
+
+.turn-off-screen {
   display: none;
 }
 

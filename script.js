@@ -38,3 +38,26 @@ function slideList (event){
   }
 }
 
+const ButtonVertical = document.querySelector('.slide1__home-vertical');
+ButtonVertical.addEventListener('click',changeScreen);
+
+const ButtonHorizontal = document.querySelector('.slide1__home-horizontal');
+ButtonHorizontal.addEventListener('click',changeScreen);
+
+function changeScreen(event){
+
+  let eventClass = '#' + event.target.classList[0];
+  let screenClassList = document.querySelector(eventClass).classList;
+  let isOn = true;
+
+  for (let i=0;i<screenClassList.length; i++){
+      if(screenClassList[i]=='turn-off-screen') isOn = false;
+  }
+
+  if(isOn){
+      screenClassList.add('turn-off-screen');
+  } else{
+      screenClassList.remove('turn-off-screen');
+  }
+
+}
