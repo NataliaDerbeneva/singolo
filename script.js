@@ -1,10 +1,7 @@
 const headerNav = document.querySelector('.header__navigation');
-
 headerNav.addEventListener('click',select)
 
-
 function select(event){
-   // 
    if(event.target.tagName == "A"){
        let navListLength = headerNav.children[0].children.length;
        let navList = headerNav.children[0].children;
@@ -17,13 +14,13 @@ function select(event){
    }
 }
 
+
 const arrows = document.querySelectorAll('.arrow-link');
 arrows.forEach(arrow => arrow.addEventListener('click', slideList));
 const slides = arrows[0].parentElement.querySelectorAll('.slide');
 let slideOrder = 0;
 
 function slideList (event){
-
   event.preventDefault();
   if(slideOrder == 0){
     slideOrder = 1;
@@ -38,6 +35,7 @@ function slideList (event){
   }
 }
 
+
 const ButtonVertical = document.querySelector('.slide1__home-vertical');
 ButtonVertical.addEventListener('click',changeScreen);
 
@@ -45,7 +43,6 @@ const ButtonHorizontal = document.querySelector('.slide1__home-horizontal');
 ButtonHorizontal.addEventListener('click',changeScreen);
 
 function changeScreen(event){
-
   let eventClass = '#' + event.target.classList[0];
   let screenClassList = document.querySelector(eventClass).classList;
   let isOn = true;
@@ -59,8 +56,8 @@ function changeScreen(event){
   } else{
       screenClassList.remove('turn-off-screen');
   }
-
 }
+
 
 const portfolioLinks = document.querySelectorAll('.portfolio__item-link');
 portfolioLinks.forEach(link => link.addEventListener('click',replaceImage))
@@ -80,11 +77,29 @@ function replaceImage(event){
       break;
     }
   }
-
   portfolioLinks[portfolioSelectedLink].classList.add('portfolio__navigation_selected');
 
   let shiftedImage = portfolioImageList.children[0];
   portfolioImageList.removeChild(shiftedImage);
   portfolioImageList.appendChild(shiftedImage);
   console.log(portfolioImageList); 
+}
+
+
+let portfolioImages = document.querySelectorAll('.layout-4-column__image');
+portfolioImages.forEach(image => image.addEventListener('click',makeImageSelected));
+let portfolioSelectedImage = -1;
+
+function makeImageSelected(event){
+  if(portfolioSelectedImage!=-1){
+    portfolioImages[portfolioSelectedImage].classList.remove('portfolio__image_selected');
+  }
+
+  for(let i=0; i<portfolioImages.length;i++){
+    if(event.target === portfolioImages[i]){
+      portfolioSelectedImage = i; 
+      break;
+    }
+  }
+  portfolioImages[portfolioSelectedImage].classList.add('portfolio__image_selected');
 }
