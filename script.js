@@ -108,6 +108,8 @@ const formSubmitButton = document.querySelector('.submit-button');
 formSubmitButton.addEventListener('click',openModalWindow);
 
 function openModalWindow(event){
+  event.preventDefault();
+
   let modalWindow = document.querySelector('.modal-window');
 
   let topicForm = document.forms["form-post"].elements["subject"].value;
@@ -143,6 +145,9 @@ function openModalWindow(event){
   content.classList.add("modal-window__content_active");
   modalWindow.classList.add("modal-window_visibility");
 }
+
+const mediaLinks = document.querySelectorAll(".social-link");
+mediaLinks.forEach(link => link.addEventListener("click", function(event) {event.preventDefault();}));
 
 const modalSubmitButton = document.querySelector('.modal-window__close-button');
 modalSubmitButton.addEventListener('click',closeModalWindow);

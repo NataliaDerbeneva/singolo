@@ -623,6 +623,34 @@ cursor: pointer;
     list-style-type: none;
 }
 
+.social-link {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+}
+
+.social-link:hover {
+  background-color: white;
+  transform: scale(1.2,1.2);
+}
+
+.link-facebook {
+  background: url("assets/social-media/Facebook.svg");
+}
+
+.link-google {
+  background: url("assets/social-media/Google+.svg");
+}
+
+.link-twitter {
+  background: url("assets/social-media/Twitter.svg");  
+}
+
+.link-linked-in {
+  background: url("assets/social-media/LinkedIn.svg");  
+}
+
 .person-photo_margin {
   margin-left: -1px;
 }
@@ -866,8 +894,6 @@ footer {
   width: inherit;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-top: 5px;
-  padding-bottom: 5px;
   text-align: justify;
 }
 
@@ -879,8 +905,8 @@ footer {
 }
 
 .modal-window__close-button {
-  width: 60px;
-  height: 30px;
+  width: 70px;
+  height: 40px;
   text-align: center;
   align-self: center;
   margin-top: 15px;
