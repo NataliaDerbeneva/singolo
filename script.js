@@ -104,13 +104,18 @@ function makeImageSelected(event){
   portfolioImages[portfolioSelectedImage].classList.add('portfolio__image_selected');
 }
 
+
+
 const formSubmitButton = document.querySelector('.submit-button');
 formSubmitButton.addEventListener('click',openModalWindow);
 
 function openModalWindow(event){
-  event.preventDefault();
-
   let modalWindow = document.querySelector('.modal-window');
+
+  let name = document.forms["form-post"].elements["name"].value;
+  let email = document.forms["form-post"].elements["email"].value;
+  if(! (/^[A-Z]{1}[a-z]+(\s[A-Z]{1}([a-z]+))?$/.test(name))) return;
+  if(!(/^[^@]+@([a-z0-9\-]+\.)+[a-z]{2,4}$/.test(email))) return;
 
   let topicForm = document.forms["form-post"].elements["subject"].value;
   let descriptionForm = document.forms["form-post"].elements["description"].value;
@@ -152,7 +157,7 @@ mediaLinks.forEach(link => link.addEventListener("click", function(event) {event
 const modalSubmitButton = document.querySelector('.modal-window__close-button');
 modalSubmitButton.addEventListener('click',closeModalWindow);
 
-function closeModalWindow(event){
+function closeModalWindow(){
   event.preventDefault();
 
   let modalWindow = document.querySelector('.modal-window');
@@ -162,4 +167,3 @@ function closeModalWindow(event){
   document.forms["form-post"].elements["description"].value = "";
   document.forms["form-post"].elements["subject"].value = "";
 }
-
