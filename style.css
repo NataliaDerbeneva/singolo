@@ -4,6 +4,7 @@
 }
   
 body {
+  position: relative;
   width: 1020px;
   margin: 0px auto 0px auto;
 }
@@ -637,6 +638,7 @@ cursor: pointer;
 .get-a-quote {  
   background-color: #f06c64;
   color: #f0d8d9;
+  position: relative;
 }
   
 .get-a-quote__wrapper {
@@ -726,6 +728,7 @@ cursor: pointer;
   
 .submit-button:hover {
   cursor: pointer;
+  border: 1px solid red;
 }
   
 input:focus,
@@ -799,7 +802,8 @@ input:focus:invalid {
 .get-a-quote__bottom-line {
   background-color: #ea676b;
 }
-  
+
+
 footer {
   background-color: #2d303a;
 }
@@ -826,4 +830,66 @@ footer {
 
 .social-media-links_margin {
   margin: 0px -1px 0px 0px;   
+}
+
+.modal-window {
+  visibility: hidden;
+  position: fixed;
+  z-index: 200;
+  top: 0px;
+}
+
+.modal-window__substrate {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  opacity: 0.5;
+}
+
+.modal-window__content {
+  position: absolute;
+  z-index: 201;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+  height: 310px;
+  opacity: 1;
+  border: 3px solid red;
+  border-radius: 8px;
+  padding: 20px 20px 20px 20px;
+}
+
+.modal-window__description {
+  display: block;
+  height: 250px;
+  width: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: justify;
+}
+
+.modal-window_text-style {
+  font-size: 12px;
+  line-height: 2;
+  font-family: "Lato-Regular", Verdana, sans-serif;
+  color: black;
+}
+
+.modal-window__close-button {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  align-self: center;
+  margin-top: 15px;
+}
+
+.modal-window_visibility {
+  visibility: visible;
+
+  font-size: 12px;
+  line-height: 2.5;
+  font-family: "Lato-Regular", Verdana, sans-serif;
 }

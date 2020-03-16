@@ -230,11 +230,11 @@
         <p class="get-a-quote__text" lang="la">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="layout-2-column">
           <div class = "get-a-quote__form">
-            <form class="form-post">
-              <input type="text" name="name" placeholder="Name (Required)" required pattern="^[A-Z]{1}[a-z]+(\s[A-Z]{1}([a-z]+))?$">
+            <form class="form-post" method="POST" onsubmit="return false" name="form-post">
+              <input  type="text" name="name" placeholder="Name (Required)" required pattern="^[A-Z]{1}[a-z]+(\s[A-Z]{1}([a-z]+))?$">
               <input type="email" name="email" placeholder="Email (Required)" required pattern="^[^@]+@([a-z0-9\-]+\.)+[a-z]{2,4}$">
-              <input type="text" name="subject" placeholder="Subject">
-              <textarea name="description" placeholder="Describe your project in detail..."></textarea>
+              <input type="text" name="subject" placeholder="Subject" value="">
+              <textarea name="description" placeholder="Describe your project in detail..." maxlength="500"></textarea>
               <input class="submit-button" type="submit" value="Submit">
             </form>
           </div>
@@ -265,6 +265,15 @@
         </div>
       </div> 
       <hr class="get-a-quote__bottom-line bottom-line">
+      <div class="modal-window">
+      <div class="modal-window__substrate"></div>
+      <div class="modal-window__content">
+        <p class="modal-window_text-style">Письмо отправлено</p>
+        <p class="modal-window__topic modal-window_text-style"></p> 
+        <p class="modal-window__description modal-window_text-style"></p>
+        <button class="modal-window__close-button" type="submit">Ok</button>
+      </div>
+    </div>
     </section>
     <footer>
       <div class="wrapper footer__wrapper">

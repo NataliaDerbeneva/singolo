@@ -103,3 +103,58 @@ function makeImageSelected(event){
   }
   portfolioImages[portfolioSelectedImage].classList.add('portfolio__image_selected');
 }
+
+const formSubmitButton = document.querySelector('.submit-button');
+formSubmitButton.addEventListener('click',openModalWindow);
+
+function openModalWindow(event){
+  let modalWindow = document.querySelector('.modal-window');
+
+  let topicForm = document.forms["form-post"].elements["subject"].value;
+  let descriptionForm = document.forms["form-post"].elements["description"].value;
+  
+  let topicModal = modalWindow.querySelector(".modal-window__topic");
+  if(topicForm == ""){
+    topicModal.textContent = "Без темы";
+  } else{
+    topicModal.textContent = "Тема: " + topicForm;
+  } 
+
+  let descriptionModal = modalWindow.querySelector(".modal-window__description");
+  if(descriptionForm == ""){
+    descriptionModal.textContent = "Без описания";
+  } else{
+    descriptionModal.textContent = "Описание: " + descriptionForm;
+  }
+  
+  modalWindow.style.top = "0px";
+  modalWindow.style.height = screen.availHeight + "px";
+
+  let bodyWidth = document.querySelector("body").clientWidth;
+  let width;
+  if(screen.availWidth < bodyWidth) width = screen.availWidth;
+  else width = bodyWidth;
+
+  modalWindow.style.width = width + "px";
+  let content = modalWindow.querySelector(".modal-window__content");
+
+  content.style.top = screen.availHeight/2 - content.clientHeight/2 + "px";
+  content.style.left = bodyWidth/2 - content.clientWidth/2 + "px";
+  content.classList.add("modal-window__content_active");
+  modalWindow.classList.add("modal-window_visibility");
+}
+
+const modalSubmitButton = document.querySelector('.modal-window__close-button');
+modalSubmitButton.addEventListener('click',closeModalWindow);
+
+function closeModalWindow(event){
+  event.preventDefault();
+
+  let modalWindow = document.querySelector('.modal-window');
+  modalWindow.classList.remove("modal-window_visibility");
+  document.forms["form-post"].elements["name"].value = "";
+  document.forms["form-post"].elements["email"].value = "";
+  document.forms["form-post"].elements["description"].value = "";
+  document.forms["form-post"].elements["subject"].value = "";
+}
+
