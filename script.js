@@ -167,3 +167,26 @@ function closeModalWindow(){
   document.forms["form-post"].elements["description"].value = "";
   document.forms["form-post"].elements["subject"].value = "";
 }
+
+
+document.addEventListener('scroll',onScroll);
+
+function onScroll(){
+  const currentPosition = window.scrollY;
+  const links = document.querySelectorAll('.header__navigation a');
+
+  let sections = document.querySelectorAll("section");
+  sections.forEach((el) =>{
+    
+     if((el.offsetTop  - 95) <= currentPosition && 
+        (el.offsetTop + el.offsetHeight - 95) > currentPosition){
+          links.forEach((a) => {
+            a.classList.remove('header__navigation_selected');
+
+            if(a.getAttribute("href").substring(1) === el.getAttribute("id")) 
+              a.classList.add('header__navigation_selected');
+          })
+        }
+  })
+}
+

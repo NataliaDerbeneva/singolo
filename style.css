@@ -3,10 +3,12 @@
   padding: 0px 0px 0px 0px;
 }
   
-body {
+body, html {
   position: relative;
   width: 1020px;
+  height: 100%;
   margin: 0px auto 0px auto;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -87,13 +89,7 @@ body {
 }
 
 .slider {
-  position: relative;
   background-color: #f06c64;
-}
-
-#home {
-  position: absolute;
-  top: 0px;
 }
 
 .slider__wrapper {
@@ -293,6 +289,7 @@ body {
 }
 
 .services{
+  scroll-margin-top: 95px;
   background-color: #f2f2f2;
 }
 
@@ -307,11 +304,6 @@ body {
   font-family: "Lato-Black", Verdana, sans-serif;
   color: #666d89; 
   letter-spacing: -0.01rem;
-}
-
-#services {
-  position: absolute;
-  top: -154px;
 }
 
 .services__text {
@@ -435,6 +427,7 @@ cursor: pointer;
 
 .portfolio {
   background-color: #2d303a;
+  scroll-margin-top: 95px;
 }
 
 .portfolio__wrapper {
@@ -450,12 +443,7 @@ cursor: pointer;
   color: #666d89;
   letter-spacing: -0.007em;
 }
-
-#portfolio {
-  position: absolute;
-  top: -154px;
-}
-  
+ 
 .portfolio__text {
   width: 940px;
   margin: 18px 0px 0px 0px;
@@ -541,6 +529,7 @@ cursor: pointer;
     
 .about-us {
   background-color: #f2f2f2;
+  scroll-margin-top: 95px;
 }
 
 .about-us__wrapper {
@@ -554,11 +543,6 @@ cursor: pointer;
   font-family: "Lato-Black", Verdana, sans-serif;
   color: #666d89;
   letter-spacing: -0.007em;
-}
-
-#about {
-  position: absolute;
-  top: -154px;
 }
   
 .about-us__text {
@@ -666,9 +650,9 @@ cursor: pointer;
 .get-a-quote {  
   background-color: #f06c64;
   color: #f0d8d9;
-  position: relative;
+  scroll-margin-top: 95px;
 }
-  
+ 
 .get-a-quote__wrapper {
   height: 589px;
   padding-top: 59px;
@@ -679,11 +663,6 @@ cursor: pointer;
   font-size: 30px; 
   font-family: "Lato-Black", Verdana, sans-serif;
   letter-spacing: -0.006em;
-}
-
-#contact {
-  position: absolute;
-  top: -154px;
 }
   
 .get-a-quote__text {
