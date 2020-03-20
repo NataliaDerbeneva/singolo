@@ -15,23 +15,18 @@ function select(event){
 }
 
 
-const arrows = document.querySelectorAll('.arrow-link');
+const arrows = document.querySelectorAll('.arrow');
 arrows.forEach(arrow => arrow.addEventListener('click', slideList));
-const slides = arrows[0].parentElement.querySelectorAll('.slide');
+const slides = document.querySelectorAll('.slide');
 let slideOrder = 0;
 
 function slideList (event){
-  event.preventDefault();
   if(slideOrder == 0){
     slideOrder = 1;
     slides[0].classList.add('slide-list');
-    document.querySelector('.slider').classList.add('slide2_background');
-    document.querySelector('.slider__bottom-line').classList.add('slider__bottom-line_visibility');
   } else {
     slideOrder = 0;
     slides[0].classList.remove('slide-list'); 
-    document.querySelector('.slider').classList.remove('slide2_background');
-    document.querySelector('.slider__bottom-line').classList.remove('slider__bottom-line_visibility');
   }
 }
 
@@ -177,6 +172,7 @@ function onScroll(){
 
   let sections = document.querySelectorAll("section");
   sections.forEach((el) =>{
+    console.log(el);
     
      if((el.offsetTop  - 95) <= currentPosition && 
         (el.offsetTop + el.offsetHeight - 95) > currentPosition){
