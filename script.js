@@ -15,21 +15,6 @@ function select(event){
 }
 
 
-const arrows = document.querySelectorAll('.arrow');
-arrows.forEach(arrow => arrow.addEventListener('click', slideList));
-const slides = document.querySelectorAll('.slide');
-let slideOrder = 0;
-
-function slideList (event){
-  if(slideOrder == 0){
-    slideOrder = 1;
-    slides[0].classList.add('slide-list');
-  } else {
-    slideOrder = 0;
-    slides[0].classList.remove('slide-list'); 
-  }
-}
-
 
 const ButtonVertical = document.querySelector('.slide1__home-vertical');
 ButtonVertical.addEventListener('click',changeScreen);
@@ -76,8 +61,7 @@ function replaceImage(event){
 
   let shiftedImage = portfolioImageList.children[0];
   portfolioImageList.removeChild(shiftedImage);
-  portfolioImageList.appendChild(shiftedImage);
-  console.log(portfolioImageList); 
+  portfolioImageList.appendChild(shiftedImage); 
 }
 
 
@@ -172,7 +156,6 @@ function onScroll(){
 
   let sections = document.querySelectorAll("section");
   sections.forEach((el) =>{
-    console.log(el);
     
      if((el.offsetTop  - 95) <= currentPosition && 
         (el.offsetTop + el.offsetHeight - 95) > currentPosition){
@@ -186,3 +169,53 @@ function onScroll(){
   })
 }
 
+
+
+let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+let isEnabled = true;
+
+document.querySelector(".arrow.arrow-forward").addEventListener('click',function(){
+  if(isEnabled) nextSlide(currentSlide);
+});
+
+document.querySelector(".arrow.arrow-backward").addEventListener('click',function(){
+  if(isEnabled) previousSlide(currentSlide);
+});
+
+function nextSlide(n){
+  hideSlide('to-right');
+  changeCurrentSlide(n+1);
+  showSlide('from-left');
+}
+
+function previousSlide(n){
+  hideSlide('to-left');
+  changeCurrentSlide(n-1);
+  showSlide('from-right');
+} 
+
+function hideSlide(direction){
+  isEnabled = false;
+  let curSlide = slides[currentSlide];
+  curSlide.classList.add(direction);
+  console.log(curSlide.classList);
+  curSlide.addEventListener('animationend',function(){
+    this.classList.remove('active', direction);
+    console.log(curSlide.classList);
+  })
+}
+
+function showSlide(direction){
+  let curSlide = slides[currentSlide];
+  curSlide.classList.add('next',direction);
+  curSlide.addEventListener('animationend',function(){
+    this.classList.remove('next',direction);
+    this.classList.add('active'); 
+    isEnabled = true;
+  })
+}
+
+function changeCurrentSlide(n){
+  currentSlide = (n + slides.length) % slides.length;
+}
