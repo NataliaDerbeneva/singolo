@@ -40,13 +40,13 @@ function changeScreen(event){
 
 
 const portfolioLinks = document.querySelectorAll('.portfolio__item-link');
-portfolioLinks.forEach(link => link.addEventListener('click',replaceImage))
+portfolioLinks.forEach(link => link.addEventListener('click',replaceImages))
 let portfolioSelectedLink = -1;
 let portfolioImageList = document.querySelector('.portfolio .layout-4-column');
 
-function replaceImage(event){
+function replaceImages(event){
   event.preventDefault();
-
+  
   if(portfolioSelectedLink!=-1){
     portfolioLinks[portfolioSelectedLink].classList.remove('portfolio__navigation_selected');
   }
@@ -63,6 +63,7 @@ function replaceImage(event){
   portfolioImageList.removeChild(shiftedImage);
   portfolioImageList.appendChild(shiftedImage); 
 }
+
 
 
 let portfolioImages = document.querySelectorAll('.layout-4-column__image');
@@ -154,11 +155,11 @@ function onScroll(){
   const currentPosition = window.scrollY;
   const links = document.querySelectorAll('.header__navigation a');
 
-  let sections = document.querySelectorAll("section");
+  let sections = document.querySelectorAll('section');
   sections.forEach((el) =>{
     
-     if((el.offsetTop  - 95) <= currentPosition && 
-        (el.offsetTop + el.offsetHeight - 95) > currentPosition){
+     if((el.offsetTop) <= currentPosition && 
+        (el.offsetTop + el.offsetHeight) > currentPosition){
           links.forEach((a) => {
             a.classList.remove('header__navigation_selected');
 
@@ -219,3 +220,12 @@ function showSlide(direction){
 function changeCurrentSlide(n){
   currentSlide = (n + slides.length) % slides.length;
 }
+
+
+let sec = document.querySelector('.services__wrapper');
+console.log("pad = " + window.getComputedStyle(sec).paddingTop);
+console.log("pad = " + window.getComputedStyle(sec).paddingLeft);
+
+//let aa = document.querySelector('.slider__wrapper');
+//console.log("height = " + window.getComputedStyle(aa).height);
+

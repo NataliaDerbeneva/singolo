@@ -6,13 +6,13 @@
 body, html {
   position: relative;
   width: 1020px;
-  height: 100%;
   margin: 0px auto 0px auto;
   scroll-behavior: smooth;
 }
 
 .header {
   position: fixed;
+  top: 0px;
   z-index: 100;
   width: inherit;
   background-color: #2d303a;
@@ -88,16 +88,20 @@ body, html {
   background-color: #323746;
 }
 
+.slider {
+  scroll-margin-top: 95px;
+}
+
 .slider__wrapper {
   position: relative;
-  padding-top: 95px;
+  margin-top: 95px;
   height: 594px;
   width: 100%;
 }
 
 .arrow {
   position: absolute;
-  top: 376px;
+  top: 47.6%;
   height: 27px;
   width: 16px;
   z-index: 4;
@@ -105,16 +109,12 @@ body, html {
 
 .arrow-backward {
   background: url("assets/arrows/arrow_left.svg") no-repeat;
-  left: 42px;
+  left: 40px;
 }
 
 .arrow-forward {
   background: url("assets/arrows/arrow_right.svg") no-repeat;
   right: 40px;
-}
-
-.link-backward_margin {
-  margin-left: 2px;
 }
 
 .arrow:hover {
@@ -147,51 +147,65 @@ body, html {
 
 .slide1__phone-vertical-shadow {
   position: absolute;
-  top: 53px;
-  left: 112px;
   z-index: 1;
+  top: 9.09%;
+  left: 10.98%; 
+  width: 23.53%;
+  height: 81.31%;
 }
 
 .slide1__phone-vertical { 
   position: absolute;
-  top: 53px;
-  left: 112px;
+  top: 9.074%;
+  left: 10.97%;
   z-index: 2;
+  width: 21.14%;
+  height: 77.1%;
 }
 
 .slide1__phone-vertical-display {
   position: absolute;
-  top: 118px;
-  left: 126px;
+  top: 20.034%;
+  left: 12.35%;
   z-index: 3;
+  width: 18.43%;
+  height: 56.061%;
 }
 
 .slide1__phone-horizontal-shadow {
   position: absolute;
-  top: 174px;
-  left: 426px;
+  top: 30.1%;
+  left: 41.67%;
   z-index: 1;
+  width: 47.35%;
+  height: 40.04%;
 }
 
 .slide1__phone-horizontal { 
   position: absolute;
-  top: 174px;
-  left: 425px;
+  top: 29.8%;
+  left: 41.67%;
   z-index: 2;
+  width: 44.9%;
+  height: 36.36%;
 }
 
 .slide1__phone-horizontal-display {
   position: absolute;
-  top: 188px;
-  left: 485px;
+  top: 32.15%;
+  left: 47.55%;
   z-index: 3;
+  width: 32.65%;
+  height: 31.65%;
 }
 
 .slide1__home-vertical {
   position: absolute;
-  top: 461px;
-  left: 199px;
+  top: 77.6%;
+  left: 19.5%;
   z-index: 3;
+  width: 4.106%;
+  height: 7.05%;
 }
 
 .slide1__home-vertical:hover {
@@ -200,9 +214,11 @@ body, html {
 
 .slide1__home-horizontal {
   position: absolute;
-  top: 261px;
-  left: 433px;
+  top: 44.4%;
+  left: 42.45%;
   z-index: 3;
+  width: 4.106%;
+  height: 7.05%;
 }
 
 .slide1__home-horizontal:hover {
@@ -215,65 +231,83 @@ body, html {
 
 .slide2__phone-vertical-shadow-1 {
   position: absolute;
-  top: 152px;
-  left: 612.16px;
+  top: 25.59%;
+  left: 60.02%;
   z-index: 1;
+  width: 15.3%;
+  height: 52.86%;
 }
 
 .slide2__phone-vertical-1 { 
   position: absolute;
-  top: 152px;
-  left: 612.16px;
+  top: 25.59%;
+  left: 60.02%;
   z-index: 2;
+  width: 13.77%;
+  height: 50.13%;
 }
 
 .slide2__phone-vertical-display-1 {
   position: absolute;
-  top: 194.26px;
-  left: 621.26px;
+  top: 32.7%;
+  left: 60.91%;
   z-index: 3;
+  width: 11.98%;
+  height: 36.44%;
 }
 
 .slide2__phone-vertical-shadow-2 {
   position: absolute;
-  top: 152px;
-  left: 252px;
+  top: 25.59%;
+  left: 24.71%;
   z-index: 1;
+  width: 15.29%;
+  height: 52.86%;
 }
 
 .slide2__phone-vertical-2 { 
   position: absolute;
-  top: 152px;
-  left: 252px;
+  top: 25.59%;
+  left: 24.7%;
   z-index: 2;
+  width: 13.77%;
+  height: 50.13%;
 }
 
 .slide2__phone-vertical-display-2 {
   position: absolute;
-  top: 194.26px;
-  left: 261.1px;
+  top: 32.7%;
+  left: 25.6%;
   z-index: 3;
+  width: 11.98%;
+  height: 36.44%;
 }
 
 .slide2__phone-vertical-shadow-3 {
   position: absolute;
-  top: 44px;
-  left: 383px;
+  top: 7.4%;
+  left: 37.55%;
   z-index: 4;
+  width: 24.99%;
+  height: 86.36;
 }
 
 .slide2__phone-vertical-3 { 
   position: absolute;
-  top: 43px;
-  left: 384px;
+  top: 7.24%;
+  left: 37.65%;
   z-index: 5;
+  width: 22.49%;
+  height: 18.89;
 }
 
 .slide2__phone-vertical-display-3 {
   position: absolute;
-  top: 112.04px;
-  left: 397.87px;
+  top: 18.86%;
+  left: 39.01%;
   z-index: 6;
+  width: 19.58%;
+  height: 59.54%;
 }
 
 .slide-list {
@@ -309,8 +343,8 @@ body, html {
 .services__text {
   display: block;
   width: 940px;
-  height: 60px;
-  margin: 18px 0px 48px 0px;
+  height: 99px;
+  margin: 18px 0px 9px 0px;
 
   font-size: 18px;
   line-height: 30px;
@@ -943,5 +977,46 @@ footer {
   }
   to {
     left: 0;
+  }
+}
+
+@media (max-width: 1020px){
+  body {
+    width: 100vw;
+    margin: 0px;
+  }
+
+  .header__navigation {
+    width: calc(371px + 4 / 252 * (1020px - 100vw));
+    margin-top: calc(42px - 3 / 252 * (1020px - 100vw));
+  }
+
+  .arrow-backward {
+    left: calc(42px - 12.58 / 252 * (1020px - 100%));
+  }
+  
+  .arrow-forward {
+    right: calc(40px - 13.14 / 252 * (1020px - 100%));
+  }
+
+  .slider__wrapper{
+    height: 58.2353vw;
+  }
+
+  .slider__bottom-line {
+    height: 0.588vw;
+  }
+  
+  .services__wrapper {
+    padding-top: calc(59px - 19.76 / 252 * (1020px - 100vw));
+    padding-left: calc(40px + 1.0 / 252 * (1020px - 100vw));
+  }
+
+  .services__text {
+    width: calc(940px - 271 / 252 * (1020px - 100vw));
+    overflow: visible;
+    letter-spacing: 0.008em;
+    height: 99px;
+    margin-bottom: 31px;
   }
 }
