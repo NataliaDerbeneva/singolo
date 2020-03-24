@@ -1010,6 +1010,7 @@ footer {
   .services__wrapper {
     padding-top: calc(59px - 19.76 / 252 * (1020px - 100vw));
     padding-left: calc(40px + 1.0 / 252 * (1020px - 100vw));
+    height: 635px;
   }
 
   .services__text {
@@ -1018,5 +1019,26 @@ footer {
     letter-spacing: 0.008em;
     height: 99px;
     margin-bottom: 31px;
+  }
+
+  .services__layout-container {
+    width: 652.64px;
+    margin-left: calc((100% - 687px) / 2);
+  }
+
+  .layout__layout-item {
+    margin-bottom: 56px;
+  }
+
+  .layout-item__icon-container_margin {
+    margin-left: 0px;
+  }
+  
+  .layout-item__header_margin {
+    margin: -5px 0px 0px -1px;
+  }
+
+  .services__bottom-line {
+    height: 0px;
   }
 }
