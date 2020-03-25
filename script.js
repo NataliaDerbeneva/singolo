@@ -222,9 +222,8 @@ function changeCurrentSlide(n){
 }
 
 
-let sec = document.querySelector('.services__wrapper');
-console.log("pad = " + window.getComputedStyle(sec).paddingTop);
-console.log("pad = " + window.getComputedStyle(sec).paddingLeft);
+let sec = document.querySelector('.about-us__wrapper');
+console.log("pad = " + window.getComputedStyle(sec).height);
 
 //let aa = document.querySelector('.slider__wrapper');
 //console.log("height = " + window.getComputedStyle(aa).height);

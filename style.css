@@ -595,7 +595,8 @@ cursor: pointer;
 }
   
 .about-us__text {
-  width: 940px;
+  display: block;
+  width: 97.2%;
   height: 57px;
   margin: 18px 0px 48px 0px;
 
@@ -608,11 +609,6 @@ cursor: pointer;
   
 .about-us__layout-container {
   width: 942px;
-}
-  
-.about-us__layout-item {
-  width: 302px;
-  height: 451px; 
 }
   
 .layout-item__person-name {
@@ -1087,4 +1083,55 @@ footer {
   .portfolio__bottom-line {
     height: 7.6px;
   }
-}
+
+  .about-us__wrapper {
+    padding-top: 52px;
+    height: calc(681px - 64 / 252 * (1020px - 100vw));
+  }
+
+  .about-us__text {
+    height: fit-content;
+    letter-spacing: 0.009em;
+    margin-bottom: 38px;
+  }
+
+  .about-us__layout-container {
+    width: calc(100vw - 82px);
+    margin-left: 2px;
+  }
+
+  .about-us__layout-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 31.9%;
+  }
+
+  .about-us__layout-item img {
+    width: 100%;
+  }
+
+  .person-photo_margin {
+    margin-left: 0px;
+  }
+
+  .layout-item__person-name {
+    margin-left: 0px;
+  }
+
+  .social-media-links_padding {
+    padding-left: 0px;
+  }
+
+  .layout-item__person-text {
+    display: block;
+    width: 100%; 
+    height: fit-content;
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+ 
+  .about-us__bottom-line {
+    height: 0px;
+  }
+} 
+
