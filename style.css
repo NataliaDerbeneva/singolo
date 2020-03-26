@@ -883,8 +883,8 @@ footer {
 .footer__copyright {
   margin: 9px 0px 0px 2px;
 
-  font-size: 12px;
-  font-family: "Lato-Regular", Verdana, sans-serif;
+  font-size: 13px;
+  font-family: "Lato-Bold", Verdana, sans-serif;
   color: #666d89;
   letter-spacing: -0.016em;
 }
@@ -1199,5 +1199,14 @@ footer {
 
   .get-a-quote__bottom-line{
     height: calc(6px - 0.21 / 252 * (1020px - 100vw));
+  }
+
+  .footer__copyright {
+    margin-left: -1px;
+    letter-spacing: 0.005em;
+  }
+
+  .social-media-links_margin {
+    margin-right: 1px;
   }
 } 
