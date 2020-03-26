@@ -724,63 +724,71 @@ cursor: pointer;
 .layout-2-column {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
   
 .get-a-quote__form {
-  margin: 7px 21px 0px 0px;
+  margin-top: 7px;
+  width: 620px;
 }
   
-.form-post {
+.form-post__inputs {
   display: flex;
   flex-direction: column;
-  width: 619px;
-  height: 434px;
+  width: 100%;
+  height: 321px;
+  justify-content: space-between;
 }
   
-.form-post input,
-.form-post textarea {
-  margin-bottom: 16px; 
+.form-post__inputs input,
+.form-post__inputs textarea {
   padding-left: 14px;
 
   font-size: 12px;
   font-family: "Lato-Regular", Verdana, sans-serif;
   color: #f0d8d9; 
+  line-height: 12px;
 
   background-color: #d6564f;
   border: none;
   border-radius: 5px;
 }
   
-.form-post input {
+.form-post__inputs input {
   height: 38px;
 }
   
-.form-post textarea {
-  height: 203px;
+.form-post__inputs textarea {
+  height: 159px;
   line-height: 35px;
 }
   
-.form-post input::-webkit-input-placeholder,
-.form-post textarea::-webkit-input-placeholder {
+.form-post__inputs input::-webkit-input-placeholder,
+.form-post__inputs textarea::-webkit-input-placeholder {
   color: #f48c8f; 
 }
   
-.form-post input::-moz-placeholder,
-.form-post textarea::-moz-placeholder {
+.form-post__inputs input::-moz-placeholder,
+.form-post__inputs textarea::-moz-placeholder {
   color: #f48c8f; 
 }
   
 .form-post .submit-button {
-  width: 100px;
-  padding: 0px 10px 0px 10px;
-  align-self: flex-end;
-
-  border: 1px solid #f48c8f;
+  width: 136px;
+  height: 38px;
+  margin-top: 14px;
+  font-family: "Lato-Bold", Verdana, sans-serif;
+  background-color: #FBC65F;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: #886A30;
+  border: none;
 }
   
 .submit-button:hover {
   cursor: pointer;
-  border: 1px solid red;
+  outline: 1px solid red;
 }
   
 input:focus,
@@ -796,6 +804,7 @@ input:focus:invalid {
   
 .get-a-quote__contact-information {
   margin-top: 5px;
+  width: 31.915%;
 }
   
 .contact-information__header {
@@ -1133,5 +1142,62 @@ footer {
   .about-us__bottom-line {
     height: 0px;
   }
-} 
 
+  .get-a-quote__wrapper {
+    height: calc(589px - 16.79 / 252 * (1020px - 100vw));
+    padding-top: calc(59px - 6 / 252 * (1020px - 100vw));
+  } 
+
+  .get-a-quote__header {
+    margin-left: 2px;
+    letter-spacing: 0.002em;
+  }
+
+  .get-a-quote__text {
+    margin-left: 2px;
+    width: 97%;
+    letter-spacing: 0.008em;
+    margin-bottom: 40px;
+  }
+
+  .layout-2-column {
+    margin-left: -1px;
+    margin-right: -3px;
+  }
+
+  .get-a-quote__form {
+    margin-top: calc(7px + 11 / 252 * (1020px - 100vw));
+    width: calc(620px - 178 / 252 * (1020px - 100vw));
+  }
+
+  .form-post__inputs {
+    height: calc(321px - 12 / 252 * (1020px - 100vw));
+  }
+
+  .get-a-quote__contact-information {
+     margin-top: calc(5px + 11 / 252 * (1020px - 100vw));
+  }
+
+  .contact-information__text {
+    margin-top: calc(7px - 6 / 252 * (1020px - 100vw));
+    width: 100%;
+    height: fit-content;
+  }
+
+  .contact-information__links {
+    margin-top: calc(21px - 10 / 252 * (1020px - 100vw));
+  }
+
+  .form-post__inputs input,
+  .form-post__inputs textarea {
+    padding-left: calc(14px - 4 / 252 * (1020px - 100vw));
+  }
+
+  .form-post .submit-button {
+    margin-top: calc(14px + 3 / 252 * (1020px - 100vw));
+  }
+
+  .get-a-quote__bottom-line{
+    height: calc(6px - 0.21 / 252 * (1020px - 100vw));
+  }
+} 
