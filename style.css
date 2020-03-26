@@ -2,12 +2,15 @@
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
   
-body, html {
+body {
   position: relative;
   width: 1020px;
   margin: 0px auto 0px auto;
-  scroll-behavior: smooth;
 }
 
 .header {
@@ -1006,6 +1009,10 @@ footer {
     margin: 0px;
   }
 
+ .bottom-line {
+   width: 100vw;
+ }
+ 
   .header__navigation {
     width: calc(371px + 4 / 252 * (1020px - 100vw));
     margin-top: calc(42px - 3 / 252 * (1020px - 100vw));
@@ -1210,3 +1217,13 @@ footer {
     margin-right: 1px;
   }
 } 
+
+@media (max-width: 767px) {
+  .footer__copyright {
+    display: none;
+  }
+
+  .footer__content {
+    justify-content: center;
+  }
+}
