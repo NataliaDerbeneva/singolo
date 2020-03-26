@@ -40,12 +40,12 @@ body {
 .header__logo {
   display: flex;
   margin-top: 29px;
-  letter-spacing: -0.033em;
 }
 
 .logo {
   font-size: 25px;  
   color: #ffffff;
+  letter-spacing: -0.033em;
 }
 
 .logo_colored {
@@ -1219,11 +1219,45 @@ footer {
 } 
 
 @media (max-width: 767px) {
+  .header__wrapper {
+    height: 67.65px;
+  }
+
+  .header__logo {
+    margin-left: calc(39.47vw - 40px);
+    margin-top: 25px;
+  }
+
+  .logo {
+    font-size: 19.6875px;
+    letter-spacing: -0.03em;
+  }
+
+  .header__navigation {
+    display: none;
+  }
+
+  .header__bottom-line {
+    height: 3.35px;
+  }
+
   .footer__copyright {
     display: none;
   }
 
   .footer__content {
     justify-content: center;
+  }
+
+  .slider__wrapper {
+    margin-top: 71px;
+  }
+
+  .arrow {
+    top: 44.5%; 
+  }
+
+  .arrow-forward {
+    right: calc(26.86px - 17.22 / 393 * (768px - 100vw));
   }
 }
