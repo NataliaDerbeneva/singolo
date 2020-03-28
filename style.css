@@ -1305,15 +1305,6 @@ footer {
     line-height: 22px;
   }
 
-  .footer__copyright {
-    display: none;
-  }
-
-  .footer__content {
-    justify-content: center;
-  }
-
-
   .portfolio__wrapper {
     padding-top: 42px;
     padding-bottom: 28px;
@@ -1445,3 +1436,17 @@ footer {
   .get-a-quote__bottom-line {
     height: 0px;
   }
+
+  .footer__copyright {
+    display: none;
+  }
+
+  .footer__content {
+    justify-content: center;
+  }
+
+  .social-media-links_margin {
+    margin-left: 1px;
+  }
+
+}
