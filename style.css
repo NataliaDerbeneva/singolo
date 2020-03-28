@@ -1313,4 +1313,72 @@ footer {
   }
 
 
-}
+  .portfolio__wrapper {
+    padding-top: 42px;
+    padding-bottom: 28px;
+  }
+
+  .portfolio__header {
+    padding-left: 0px;
+    letter-spacing: -0.017em;
+  }
+
+  .portfolio__text {
+    padding-left: 0px;
+    width: 99%;
+    letter-spacing: 0.008rem;
+  }
+
+  .portfolio__navigation {
+    margin-top: 16px;
+    margin-bottom: 12px;
+    padding-left: 0px;
+  }
+
+  .layout-4-column {
+    padding: 6.5px;
+    margin-right: -13px;
+    margin-left: -13px;
+  }
+
+  .layout-4-column li {
+    margin: 6.5px 6.5px 7px 6.5px;
+    flex: 1 0 35%;
+  }
+
+  .layout-4-column li:nth-child(n+9) {
+    display: none;
+  }
+
+  .portfolio__bottom-line {
+    height: 0px;
+  }
+
+  .about-us__wrapper {
+    padding-top: 33px;
+    height: fit-content;
+    padding-bottom: 11px;
+  }
+
+  .about-us__text {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+
+  .about-us__layout-container {
+    margin-left: 1px;
+    width: 100%;
+  }
+
+  .about-us__layout-item {
+    flex-basis: 99.685%;
+    margin-bottom: 33px;
+  }
+
+  .about-us .layout-item__person-name {
+    margin-top: 17px;
+  }
+
+  .get-a-quote__header {
+    margin-left: 0px;
+  }
