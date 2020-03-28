@@ -1404,14 +1404,16 @@ footer {
     height: fit-content;
   }
 
-  .form-post__inputs input {
+  .form-post__inputs input,
+  .form-post__inputs textarea {
     margin-bottom: 12px;
+    padding-left: 7px;
   }
 
   .form-post .submit-button {
     width: 100%;
     height: 50px;
-    margin-top: 14px;
+    margin-top: 2px;
     line-height: 16px;
   }
 
