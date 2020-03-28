@@ -732,6 +732,7 @@ cursor: pointer;
 .layout-2-column {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
   
@@ -1379,6 +1380,68 @@ footer {
     margin-top: 17px;
   }
 
+  .get-a-quote__wrapper {
+    padding-bottom: 37px;
+    height: fit-content;
+  }
+
   .get-a-quote__header {
     margin-left: 0px;
+  }
+
+  .get-a-quote__text {
+    margin-left: 0px;
+    text-align: left;
+    height: fit-content;
+    margin-bottom: 23px;
+  }
+
+  .get-a-quote .layout-2-column {
+    margin-left: 0px;
+  }
+
+  .get-a-quote__form {
+    margin-top: 0px;
+  }
+
+  .get-a-quote__form {
+    flex-basis: 99%;
+    width: 100%;
+  }
+
+  .form-post__inputs{
+    height: fit-content;
+  }
+
+  .form-post__inputs input {
+    margin-bottom: 12px;
+  }
+
+  .form-post .submit-button {
+    width: 100%;
+    height: 50px;
+    margin-top: 14px;
+    line-height: 16px;
+  }
+
+  .get-a-quote__contact-information {
+    flex-basis: 99%;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .contact-information__text {
+    margin-top: 1px;
+  }
+
+  .contact-information__links {
+    margin-top: 11px;
+  }
+
+  .contact-information__links .link-group {
+    margin-bottom: 4px;
+  }
+
+  .get-a-quote__bottom-line {
+    height: 0px;
   }
