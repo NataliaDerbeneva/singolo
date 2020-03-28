@@ -1033,7 +1033,7 @@ footer {
   }
 
   .slider__wrapper{
-    height: 58.2353vw;
+    height: calc(594px - 146.76 / 252 * (1020px - 100vw));
   }
 
   .slider__bottom-line {
@@ -1235,6 +1235,10 @@ footer {
   
   .header__wrapper {
     height: 67.65px;
+  }
+
+  .header__content {
+    margin-left: 10px;
   }
 
   .header__logo {
