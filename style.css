@@ -1,6 +1,7 @@
 * {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+  outline: 1px solid red;
 }
 
 html {
@@ -37,6 +38,10 @@ body {
   font-family: "Lato-Bold", Verdana, sans-serif;
   text-transform: uppercase;
   justify-content: space-between;
+}
+
+.header .hamburger {
+  display: none;
 }
 
 .header__logo {
@@ -905,10 +910,11 @@ footer {
 }
 
 .modal-window {
-  visibility: hidden;
+  display: none;
   position: fixed;
   z-index: 200;
   top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
 }
@@ -923,11 +929,14 @@ footer {
 .get-a-quote .modal-window__content {
   position: absolute;
   z-index: 201;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
   display: flex;
   flex-direction: column;
   background-color: white;
   width: 400px;
-  height: 310px;
+  height: fit-content;
   opacity: 1;
   border: 3px solid red;
   border-radius: 8px;
@@ -942,8 +951,7 @@ footer {
   display: block;
   height: 250px;
   width: inherit;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow: auto;
   text-align: justify;
 }
 
@@ -963,7 +971,7 @@ footer {
 }
 
 .modal-window_visibility {
-  visibility: visible;
+  display: block;
 }
 
 .active,
@@ -1239,6 +1247,11 @@ footer {
   .social-media-links_margin {
     margin-right: 1px;
   }
+
+  .get-a-quote .modal-window {
+    width: 100vw;
+    height: 100vh;
+  }
 } 
 
 @media (max-width: 767px) and (min-width: 320px) {
@@ -1257,7 +1270,6 @@ footer {
   
   .header__wrapper {
     height: 67.65px;
-    margin-left: -20px;
     margin-right: 4px;
   }
 
@@ -1468,9 +1480,9 @@ footer {
     height: 0px;
   }
 
-  .modal-window__content {
+  .get-a-quote .modal-window__content {
     width: 80vw;
-  }
+  }  
 
   .footer__copyright {
     display: none;
@@ -1530,7 +1542,7 @@ footer {
     background-color:  #FFFFFF;;
     border-radius: 5px;
   }
-  
+ 
   .header .modal-window__content {
     position: absolute;
     z-index: 201;

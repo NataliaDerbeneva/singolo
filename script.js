@@ -1,5 +1,5 @@
 const headerNav = document.querySelector('.header__navigation');
-headerNav.addEventListener('click',select)
+headerNav.addEventListener('click',select);
 
 function select(event){
    if(event.target.tagName == "A"){
@@ -13,8 +13,6 @@ function select(event){
        event.target.classList.add('header__navigation_selected');
    }
 }
-
-
 
 const ButtonVertical = document.querySelector('.slide1__home-vertical');
 ButtonVertical.addEventListener('click',changeScreen);
@@ -90,12 +88,14 @@ const formSubmitButton = document.querySelector('.submit-button');
 formSubmitButton.addEventListener('click',openModalWindow);
 
 function openModalWindow(event){
-  let modalWindow = document.querySelector('.modal-window');
+  let modalWindow = document.querySelector('.get-a-quote .modal-window');
 
   let name = document.forms["form-post"].elements["name"].value;
   let email = document.forms["form-post"].elements["email"].value;
   if(! (/^[A-Z]{1}[a-z]+(\s[A-Z]{1}([a-z]+))?$/.test(name))) return;
   if(!(/^[^@]+@([a-z0-9\-]+\.)+[a-z]{2,4}$/.test(email))) return;
+
+  modalWindow.classList.add("modal-window_visibility");
 
   let topicForm = document.forms["form-post"].elements["subject"].value;
   let descriptionForm = document.forms["form-post"].elements["description"].value;
@@ -113,34 +113,20 @@ function openModalWindow(event){
   } else{
     descriptionModal.textContent = "Описание: " + descriptionForm;
   }
-  
-  modalWindow.style.top = "0px";
-  modalWindow.style.height = screen.availHeight + "px";
-
-  let bodyWidth = document.querySelector("body").clientWidth;
-  let width;
-  if(screen.availWidth < bodyWidth) width = screen.availWidth;
-  else width = bodyWidth;
-
-  modalWindow.style.width = width + "px";
-  let content = modalWindow.querySelector(".modal-window__content");
-
-  content.style.top = screen.availHeight/2 - content.clientHeight/2 + "px";
-  content.style.left = bodyWidth/2 - content.clientWidth/2 + "px";
-  content.classList.add("modal-window__content_active");
-  modalWindow.classList.add("modal-window_visibility");
 }
+
+
 
 const mediaLinks = document.querySelectorAll(".social-link");
 mediaLinks.forEach(link => link.addEventListener("click", function(event) {event.preventDefault();}));
 
-const modalSubmitButton = document.querySelector('.modal-window__close-button');
+const modalSubmitButton = document.querySelector('.get-a-quote .modal-window__close-button');
 modalSubmitButton.addEventListener('click',closeModalWindow);
 
 function closeModalWindow(){
   event.preventDefault();
 
-  let modalWindow = document.querySelector('.modal-window');
+  let modalWindow = document.querySelector('.get-a-quote .modal-window');
   modalWindow.classList.remove("modal-window_visibility");
   document.forms["form-post"].elements["name"].value = "";
   document.forms["form-post"].elements["email"].value = "";
@@ -171,7 +157,6 @@ function onScroll(){
 }
 
 
-
 let slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 let isEnabled = true;
@@ -200,10 +185,8 @@ function hideSlide(direction){
   isEnabled = false;
   let curSlide = slides[currentSlide];
   curSlide.classList.add(direction);
-  console.log(curSlide.classList);
   curSlide.addEventListener('animationend',function(){
     this.classList.remove('active', direction);
-    console.log(curSlide.classList);
   })
 }
 
@@ -222,9 +205,21 @@ function changeCurrentSlide(n){
 }
 
 
-let sec = document.querySelector('.about-us__wrapper');
-console.log("pad = " + window.getComputedStyle(sec).height);
+let hamburger = document.querySelector(".header .hamburger");
+hamburger.addEventListener('click', openMobileMenu);
 
-//let aa = document.querySelector('.slider__wrapper');
-//console.log("height = " + window.getComputedStyle(aa).height);
+function openMobileMenu(event) {
+  let modalWindow = document.querySelector(".header .modal-window");
+  modalWindow.classList.add('modal-window_visibility');   
+}
 
+let rotatedHamburger = document.querySelector(".header .modal-window .hamburger");
+rotatedHamburger.addEventListener('click',closeMobileMenu);
+
+function closeMobileMenu(){
+  let modalWindow = document.querySelector(".header .modal-window");
+  modalWindow.classList.remove('modal-window_visibility');   
+}
+
+let mobileNavigation = document.querySelectorAll('.header .modal-window .navigation__item');
+mobileNavigation.forEach(item => item.addEventListener('click',closeMobileMenu));
