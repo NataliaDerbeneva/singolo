@@ -1,7 +1,6 @@
 * {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  outline: 1px solid red;
 }
 
 html {
@@ -13,6 +12,17 @@ body {
   width: 1020px;
   min-width: 320px;
   margin: 0px auto 0px auto;
+}
+
+.slider {
+  scroll-margin-top: 95px;
+}
+
+.services,
+.portfolio,
+.about-us,
+.get-a-quote {
+    scroll-margin-top: 92px;
 }
 
 .header {
@@ -52,7 +62,7 @@ body {
 .logo {
   font-size: 25px;  
   color: #ffffff;
-  letter-spacing: -0.033em;
+  letter-spacing: -0.02em;
 }
 
 .logo_colored {
@@ -96,10 +106,6 @@ body {
 
 .header__bottom-line {
   background-color: #323746;
-}
-
-.slider {
-  scroll-margin-top: 95px;
 }
 
 .slider__wrapper {
@@ -158,42 +164,42 @@ body {
 .slide1__phone-vertical-shadow {
   position: absolute;
   z-index: 1;
-  top: 9.09%;
-  left: 10.98%; 
+  top: 53px;
+  left: 112px; 
   width: 23.53%;
   height: 81.31%;
 }
 
 .slide1__phone-vertical { 
   position: absolute;
-  top: 9.074%;
-  left: 10.97%;
+  left: 112px;
+  top: 53px;
   z-index: 2;
-  width: 21.14%;
-  height: 77.1%;
+  width: 216px;
+  height: 458px;
 }
 
 .slide1__phone-vertical-display {
   position: absolute;
-  top: 20.034%;
-  left: 12.35%;
+  left: 126px;
+  top: 118px;
+  width: 188px;
   z-index: 3;
-  width: 18.43%;
   height: 56.061%;
 }
 
 .slide1__phone-horizontal-shadow {
   position: absolute;
-  top: 30.1%;
-  left: 41.67%;
+  top: 174px;
+  height: 240px;
   z-index: 1;
-  width: 47.35%;
-  height: 40.04%;
+  left: 426px;
+  width: 483px;
 }
 
 .slide1__phone-horizontal { 
   position: absolute;
-  top: 29.8%;
+  top: 174px;
   left: 41.67%;
   z-index: 2;
   width: 44.9%;
@@ -202,7 +208,7 @@ body {
 
 .slide1__phone-horizontal-display {
   position: absolute;
-  top: 32.15%;
+  top: 188px;
   left: 47.55%;
   z-index: 3;
   width: 32.65%;
@@ -224,7 +230,7 @@ body {
 
 .slide1__home-horizontal {
   position: absolute;
-  top: 44.4%;
+  top: 260px;
   left: 42.45%;
   z-index: 3;
   width: 4.106%;
@@ -333,7 +339,6 @@ body {
 }
 
 .services{
-  scroll-margin-top: 95px;
   background-color: #f2f2f2;
 }
 
@@ -476,7 +481,6 @@ cursor: pointer;
 
 .portfolio {
   background-color: #2d303a;
-  scroll-margin-top: 95px;
 }
 
 .portfolio__wrapper {
@@ -561,6 +565,9 @@ cursor: pointer;
   padding: 5px 5px 5px 5px;
   height: 606px;
   overflow: hidden;
+  margin-left: -10px;
+  margin-top: -10px;
+  width: 960px;
 }
 
 .layout-4-column li {
@@ -593,7 +600,6 @@ cursor: pointer;
     
 .about-us {
   background-color: #f2f2f2;
-  scroll-margin-top: 95px;
 }
 
 .about-us__wrapper {
@@ -611,7 +617,6 @@ cursor: pointer;
   
 .about-us__text {
   display: block;
-  width: 97.2%;
   height: 57px;
   margin: 18px 0px 48px 0px;
 
@@ -623,7 +628,7 @@ cursor: pointer;
 }
   
 .about-us__layout-container {
-  width: 942px;
+  width: 941px;
 }
   
 .layout-item__person-name {
@@ -710,7 +715,6 @@ cursor: pointer;
 .get-a-quote {  
   background-color: #f06c64;
   color: #f0d8d9;
-  scroll-margin-top: 95px;
 }
  
 .get-a-quote__wrapper {
@@ -752,7 +756,7 @@ cursor: pointer;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 321px;
+  height: 364px;
   justify-content: space-between;
 }
   
@@ -775,7 +779,7 @@ cursor: pointer;
 }
   
 .form-post__inputs textarea {
-  height: 159px;
+  height: 202px;
   line-height: 35px;
 }
   
@@ -899,8 +903,8 @@ footer {
 .footer__copyright {
   margin: 9px 0px 0px 2px;
 
-  font-size: 13px;
-  font-family: "Lato-Bold", Verdana, sans-serif;
+  font-size: 12px;
+  font-family: "Lato-Regular", Verdana, sans-serif;
   color: #666d89;
   letter-spacing: -0.016em;
 }
@@ -1027,18 +1031,14 @@ footer {
     margin: 0px;
   }
 
-  .slider,
-  .services,
-  .portfolio,
-  .about-us,
-  .get-a-quote {
-      scroll-margin-top: 94px;
-  }
-
  .bottom-line {
    width: 100vw;
  }
  
+ .logo {
+  letter-spacing: -0.033em;
+ }
+
   .header__navigation {
     width: calc(371px + 4 / 252 * (1020px - 100vw));
     margin-top: calc(42px - 3 / 252 * (1020px - 100vw));
@@ -1054,6 +1054,53 @@ footer {
 
   .slider__wrapper{
     height: calc(447.24px + 146.76 / 252 * (100vw - 768px));
+  }
+
+  .slide1__phone-horizontal { 
+    top: 29.8%;
+  }
+
+  .slide1__phone-horizontal-display {
+    top: 32.15%;
+  }
+
+  .slide1__phone-horizontal-shadow {
+    position: absolute;
+    top: 30.1%;
+    left: 41.67%;
+    z-index: 1;
+    width: 47.35%;
+    height: 40.04%;
+  }
+
+  .slide1__phone-vertical { 
+    position: absolute;
+    top: 9.074%;
+    left: 10.97%;
+    z-index: 2;
+    width: 21.14%;
+    height: 77.1%;
+  }
+
+  .slide1__phone-vertical-display {
+    position: absolute;
+    top: 20.034%;
+    left: 12.35%;
+    z-index: 3;
+    width: 18.43%;
+    height: 56.061%;
+  }
+
+  .slide1__phone-vertical-shadow {
+    position: absolute;
+    z-index: 1;
+    top: 9.09%;
+    left: 10.98%; 
+  }
+
+  .slide1__home-horizontal {
+    position: absolute;
+    top: 44.4%;
   }
 
   .slider__bottom-line {
@@ -1117,6 +1164,7 @@ footer {
     margin-left: -11px;
     margin-right: 11px;
     height: fit-content;
+    width: 100%;
   }
 
   .layout-4-column li {
@@ -1137,6 +1185,7 @@ footer {
 
   .about-us__text {
     height: fit-content;
+    width: 97.2%;
     letter-spacing: 0.009em;
     margin-bottom: 38px;
   }
@@ -1255,7 +1304,10 @@ footer {
 } 
 
 @media (max-width: 767px) and (min-width: 320px) {
-  .slider,
+  .slider {
+    scroll-margin-top: 71px;
+  }
+
   .services,
   .portfolio,
   .about-us,
